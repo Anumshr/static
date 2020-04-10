@@ -11,9 +11,10 @@ pipeline{
 
 			}
 		}
-		stage('Lint HTML'){
+		stage('Check lint'){
 			steps{
-				'sh 'tidy -q -e *.html''
+				sh 'tidy -q -e *.html'
+
 			}
 		}
 		stage('Upload to AWS'){
