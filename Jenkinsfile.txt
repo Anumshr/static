@@ -1,14 +1,16 @@
-pipeline {
+pipeline{
 	agent any
 	stages{
-		stage('Build'){
-			steps{
-				sh 'echo "Hello World!" '
+		stage{'Build'}{
+			steps {
+
+				sh 'echo "Hello -world "'
 				sh '"" 
-				    echo "Multiline comments works too"
-				    ls -lah
-				    ""'
+						echo "Multi line shell"
+					""'
+
 			}
 		}
+
 	}
 }
